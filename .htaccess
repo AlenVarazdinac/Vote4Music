@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteBase /Vote4Music_Simple/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule img/favicon/browserconfig.xml img/favicon/browserconfig.php%{QUERY_STRING} [L]
+RewriteRule lobby.js lobby.php%{QUERY_STRING} [L]
+
