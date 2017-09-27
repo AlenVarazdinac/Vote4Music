@@ -12,7 +12,7 @@ switch ($_SERVER['HTTP_HOST']) {
         $sqlUser = 'varazdinac';
         $sqlPw = '123';
         break;
-        
+
     case 'vote4music.byethost7.com':
         $appPath = '/Vote4Music_Simple/';
         $sqlHost = 'sql108.byethost7.com';
@@ -20,7 +20,7 @@ switch ($_SERVER['HTTP_HOST']) {
         $sqlUser = 'b7_20112054';
         $sqlPw = 'p76qxry3';
         break;
-        
+
     default:
         $appPath = '/';
         break;
@@ -37,20 +37,18 @@ try {
         case 2002:
             echo "Can't connect to MySQL server";
             break;
-            
+
         case 1049:
             echo "Database does not exist";
             break;
-            
+
         case 1045:
             echo "Combination of username and password does not exist in MySQL server";
             break;
-        
+
         default:
             print_r($e);
             break;
     }
     exit;
 }
-
-

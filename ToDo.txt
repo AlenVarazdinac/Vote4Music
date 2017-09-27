@@ -1,0 +1,3 @@
+Lobby Update -
+    If there is no lobby player then get the first user from queue.
+    If there is no user in queue then write "Join queue" and remove YT Window.

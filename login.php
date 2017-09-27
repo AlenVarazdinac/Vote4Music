@@ -3,14 +3,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>
-        <?php echo $appName;?>
-    </title>
+    <meta charset="utf-8" />
+    <title><?php echo $appName;?></title>
 </head>
 
 <body>
-
     <form method="post" action="authorize.php">
         <label for="login_username">Username</label>
         <input type="text" name="login_username" id="login_username" placeholder="Enter your username" />
@@ -29,6 +26,20 @@
         <input type="submit" value="Log in" />
     </form>
 
-</body>
+    <br />
+    <br />
 
-</html>
+    <ul>
+        <li>
+            <p><strong>ADMIN</strong></p>
+            <p>Username - AlenV</p>
+            <p>Password - 123</p>
+        </li>
+        <li>
+            <p><strong>USER</strong></p>
+            <p>Username - TestU</p>
+            <p>Password - 123</p>
+            <p>_______________</p>
+        </li>
+    </ul>
+</body>
