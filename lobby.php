@@ -231,9 +231,6 @@ require_once 'vendor/autoload.php';
                 });
             };
 
-            // https://stackoverflow.com/questions/18938180/how-to-get-the-html-of-a-div-on-another-page-with-jquery-ajax
-            // http://api.jquery.com/load/
-
             $("#queueOrderList").load("updateQueueList.php #queue_user_1, #queue_user_2, #queue_user_3, #queue_user_4, #queue_user_5", function() {
                 console.log("Load was performed");
             });
